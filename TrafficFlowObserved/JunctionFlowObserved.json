@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "-",
+  "title": " - Transportation / JunctionFlowObserved",
+  "description": "JunctionFlowObserved",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["JunctionFlowObserved"],
+          "description": "NGSI Entity type"
+        },
+      
+        "refJunction": {
+          "type": "string",
+          "format": "uri"
+        },
+        "dateObserved": {
+          "type": "string"
+        },
+        "dateObservedFrom": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dateObservedTo": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "intensity": {
+          "type": "number",
+          "minimum": 0
+        },
+        "left turns": {
+          "type": "number",
+          "minimum": 0
+        },
+        "right turns": {
+          "type": "number",
+          "minimum": 0
+        },
+        "straight through": {
+          "type": "number",
+          "minimum": 0
+        },
+       
+        "averageVehicleSpeed": {
+          "type": "number",
+          "minimum": 0
+        },
+        "averageVehicleLength": {
+          "type": "number",
+          "minimum": 0
+        },
+        "averageGapDistance": {
+          "type": "number",
+          "minimum": 0
+        },
+        "congested": {
+          "type": "boolean"
+        },
+        "averageHeadwayTime": {
+          "type": "number",
+          "minimum": 0
+        },
+        "vehicleType": {
+          "type": "string",
+          "enum": [
+            "agriculturalVehicle",
+            "bicycle",
+            "bus",
+            "minibus",
+            "car",
+            "caravan",
+            "tram",
+            "tanker",
+            "carWithCaravan",
+            "carWithTrailer",
+            "lorry",
+            "moped",
+            "motorcycle",
+            "motorcycleWithSideCar",
+            "motorscooter",
+            "trailer",
+            "van",
+            "constructionOrMaintenanceVehicle",
+            "trolley",
+            "binTrolley",
+            "sweepingMachine",
+            "cleaningTrolley"
+          ]
+        },
+        "vehicleSubType": {
+          "type": "string"
+        }
+      }
+    }
+  ],
+  "required": ["id", "type", "dateObserved","refJunction"],
+  
+}
