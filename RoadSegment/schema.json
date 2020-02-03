@@ -24,6 +24,9 @@
         "refRoad": {
           "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
         },
+        "refJunction": {
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+        },
         "startPoint": {
           "$ref": "http://geojson.org/schema/Geometry.json#",
           "description": "The start point of this road segment encoded as a GeoJSON point"
