@@ -50,6 +50,34 @@
           "type": "number",
           "minimum": 0
         },
+        "no_car": {
+          "type": "number",
+          "minimum": 0
+        },
+        "no_LGV": {
+          "type": "number",
+          "minimum": 0
+        },
+        "no_OGV1": {
+          "type": "number",
+          "minimum": 0
+        },
+        "no_OGV2": {
+          "type": "number",
+          "minimum": 0
+        },
+        "no_PSV": {
+          "type": "number",
+          "minimum": 0
+        },
+        "no_MC": {
+          "type": "number",
+          "minimum": 0
+        },
+        "no_PC": {
+          "type": "number",
+          "minimum": 0
+        },
        
         "averageVehicleSpeed": {
           "type": "number",
